@@ -1,0 +1,25 @@
+.section-1{
+    display:flex;
+    height:87vh;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+.section-1 .heading{
+    font-weight:800;
+    font-size:3rem;
+}
+
+.section-1 .heading > span{
+    color:var(--primary);
+    display:block;
+}
+
+.section-1 .content{
+    color:var(--text-color-2);
+    margin:2rem 0;
+    font-size:0.8rem;
+    font-weight:500;
+}

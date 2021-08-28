@@ -9,8 +9,9 @@ const Section1 = () => {
               <p>Simplifying the creation of landing pages, blog pages,</p>
               <p>application pages and so much more!</p>
             </div>
-            <div>
-              <button className="primary-btn">Purchase Now</button>
+            <div style={{position:"relative"}}>
+              <div className="badge">only $15/mo</div>
+              <button className="primary-btn purchase-btn">Purchase Now</button>
             </div>
             <Link className="primary-link" to="/">Learn More</Link>
         </section>

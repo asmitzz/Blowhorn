@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .heading {
+  color: var(--text-color-1);
+}
+
+.features .content {
+  color: var(--text-color-3);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.features .card-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns:300px 300px 300px;
+}
+
+.features .card {
+  height: 250px;
+  border-radius:15px;
+  background: var(--tertiary);
+}
+
+.fa-certificate{
+    color:blue;
+    border:1px solid white;
+}

@@ -9,10 +9,13 @@
 
 :root{
    --primary:#5651E9;
-   --seconday:#FFFFFF;
+   --secondary:#FFFFFF;
+   --tertiary:#F3F4F6;
    --text-color-1:#111827;
    --text-color-2:#45474C;
+   --text-color-3:#84868C;
    --border:#E9EBEE;
+   --success:#34D399;
 }
 
 .App{
@@ -23,7 +26,7 @@
 .primary-btn{
   padding:0.8rem;
   background:var(--primary);
-  color:var(--seconday)!important;
+  color:var(--secondary)!important;
   border-radius:20px;
   border:none;
   cursor:pointer;

@@ -39,7 +39,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="features">
+    <section id="feature" className="features">
       <h2 className="heading">Our Features</h2>
       <p className="content">Check out our list of awesome features below.</p>
       <div className="card-container">

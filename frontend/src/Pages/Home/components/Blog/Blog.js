@@ -2,7 +2,7 @@ import "./Blog.css";
 
 const Blog = () => {
   return (
-    <section className="blog">
+    <section id="blog" className="blog">
       <h1 className="heading">The Project Blog</h1>
       <p className="content">Designs and layouts to help with your app.</p>
       

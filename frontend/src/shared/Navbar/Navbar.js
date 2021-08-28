@@ -1,48 +1,80 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom"
-import { useWindowSize } from "../../custom-hooks/useWindowSize";
 import "./Navbar.css";
 
 const Navbar = () => {
     const [toggle,setToggle] = useState(false);
-    const { width } = useWindowSize();
+
+    const handleOptions = (e) => {
+        if(e.target.tagName === "A"){
+           setToggle(false)
+        }
+    }
 
     return (
         <nav className="navbar">
            <h1 className="navbar-heading">nullBrains<span>.</span></h1>
-           { (!toggle && width < 768) &&<button className="hamburger" onClick={() => setToggle(true)}>
+           { !toggle && <button className="hamburger" onClick={() => setToggle(true)}>
                    <span></span>
                    <span></span>
                    <span></span>
            </button>}
-           { toggle && <button className="dismiss-btn" onClick={() => setToggle(false)}>X</button>}
 
-           { (width > 768 || toggle) && <> <ul className="nav-items list-1">
+           <ul className="nav-items">
               
                <li className="nav-item">
                    <NavLink end activeClassName="active" className="nav-link" to="/">Home</NavLink>
                </li>
                <li className="nav-item">
-                   <NavLink end activeClassName="active" className="nav-link" to="/features">Features</NavLink>
+                   <a className="nav-link" href="#feature">Features</a>
                </li>
                <li className="nav-item">
-                   <NavLink end activeClassName="active" className="nav-link" to="/blog">Blog</NavLink>
+                   <a className="nav-link" href="#blog">Blog</a>
                </li>
                <li className="nav-item">
-                   <NavLink end activeClassName="active" className="nav-link" to="/contact">Contact</NavLink>
+                   <a className="nav-link" href="#footer">Contact</a>
                </li>
                <li className="nav-item">
                    <button className="search-btn"><i className="fa fa-search"></i></button>
                </li>
            </ul>
-           <ul className="nav-items list-2">
+           <ul className="nav-items">
                <li className="nav-item">
                    <NavLink className="nav-link" to="/signin">Sign In</NavLink>
                </li>
                <li className="nav-item">
                    <NavLink className="nav-link primary-btn" to="/signup">Sign Up</NavLink>
                </li>
-           </ul></>}
+           </ul>
+
+          {toggle && 
+          <ul className="list" onClick={handleOptions}>
+              <button className="dismiss-btn" onClick={() => setToggle(false)}>X</button>
+              <li className="nav-item">
+                  <NavLink end activeClassName="active" className="nav-link" to="/">Home</NavLink>
+              </li>
+              <li className="nav-item">
+                  <a className="nav-link" href="#feature">Features</a>
+              </li>
+              <li className="nav-item">
+                  <a className="nav-link" href="#blog">Blog</a>
+              </li>
+              <li className="nav-item">
+                  <a className="nav-link" href="#footer">Contact</a>
+              </li>
+              <li className="nav-item">
+                  <button className="search-btn"><i className="fa fa-search"></i></button>
+              </li>
+              <div className="list-2">
+              <li className="nav-item">
+                  <NavLink className="nav-link" to="/signin">Sign In</NavLink>
+              </li>
+              <li className="nav-item">
+                  <NavLink className="nav-link primary-btn" to="/signup">Sign Up</NavLink>
+              </li>
+              </div>
+          </ul>}
+
         </nav>
     );
 };

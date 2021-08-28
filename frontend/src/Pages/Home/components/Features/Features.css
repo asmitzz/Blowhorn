@@ -24,6 +24,21 @@
   place-items:center;
 }
 
+@media (max-width:1000px){
+  .features .card-container {
+    display: grid;
+    grid-template-columns:300px 300px;
+  }
+}
+
+@media (max-width:680px){
+  .features .card-container {
+    display: grid;
+    grid-template-columns:0.9fr;
+    justify-content:center;
+  }
+}
+
 .features .feature-card {
   height: 220px;
   border-radius:15px;

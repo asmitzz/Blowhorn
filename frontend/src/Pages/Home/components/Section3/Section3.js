@@ -18,7 +18,7 @@ const Section3 = () => {
                 </div>
             </div>
 
-            <div className="content">
+            <div className="content tasks">
                 <div>
                     <h2 className="heading">Automated Tasks</h2>
                     <p className="detail">Save time and money with our revolutionary services. We are the leaders in the industry.</p>

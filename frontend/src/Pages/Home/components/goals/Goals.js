@@ -1,10 +1,10 @@
-import "./Section3.css";
+import "./Goals.css";
 import Boost from "../../../../assets/boost.png";
-import Task from "../../../../assets/boost1.png";
+import Task from "../../../../assets/task.png";
 
-const Section3 = () => {
+const Goals = () => {
     return (
-        <div className="section-3">
+        <div className="goals">
             <div className="content">
                 <img alt="productivity" loading="lazy" width="100%" height="auto" src={Boost}/>
                 <div>
@@ -34,4 +34,4 @@ const Section3 = () => {
     )
 }
 
-export default Section3
+export default Goals

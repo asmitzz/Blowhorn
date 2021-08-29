@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import "./Section1.css";
+import "./ContentHeader.css";
 
-const Section1 = () => {
+const ContentHeader = () => {
     return (
-        <section className="section-1">
+        <section className="content-header">
             <h1 className="heading">Start Crafting Your <span>Next Great Idea</span></h1>
             <div className="content">
               <p>Simplifying the creation of landing pages, blog pages,</p>
@@ -13,9 +13,9 @@ const Section1 = () => {
               <div className="badge">only $15/mo</div>
               <button className="primary-btn purchase-btn">Purchase Now</button>
             </div>
-            <Link className="primary-link" to="/">Learn More</Link>
+            <Link className="primary-link" style={{marginTop:"0.3rem"}} to="/">Learn More</Link>
         </section>
     );
 };
 
-export default Section1;
+export default ContentHeader;

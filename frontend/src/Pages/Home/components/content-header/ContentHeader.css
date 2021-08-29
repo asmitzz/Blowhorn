@@ -1,4 +1,4 @@
-.section-1{
+.content-header{
     display:flex;
     height:87vh;
     flex-direction:column;
@@ -8,24 +8,24 @@
     padding:0 0.5rem;
 }
 
-.section-1 .heading{
+.content-header .heading{
     font-weight:800;
     font-size:3rem;
 }
 
-.section-1 .heading > span{
+.content-header .heading > span{
     color:var(--primary);
     display:block;
 }
 
-.section-1 .content{
+.content-header .content{
     color:var(--text-color-2);
     margin:2rem 0;
     font-size:0.8rem;
     font-weight:500;
 }
 
-.section-1 .badge{
+.content-header .badge{
     position:absolute;
     top:-10px;
     right:-20px;
@@ -36,6 +36,6 @@
     border-radius:10px;
 }
 
-.section-1 .purchase-btn{
+.content-header .purchase-btn{
     padding:1rem;
 }

@@ -5,10 +5,12 @@
   padding:0;
   box-sizing:border-box;
   font-family: 'Montserrat', sans-serif;
+  font-weight:500;
 }
 
 :root{
    --primary:#5651E9;
+   --light-primary:#6a66ee;
    --secondary:#FFFFFF;
    --tertiary:#F3F4F6;
    --text-color-1:#111827;
@@ -33,11 +35,27 @@
   font-weight:500;
 }
 
+.primary-btn:hover{
+  background:var(--light-primary);
+}
+
+.primary-btn:active{
+  background:var(--primary);
+}
+
 .primary-link{
   color:var(--primary);
   text-decoration:none;
+  font-weight:600;
   font-size:0.8rem;
-  margin-top:0.2rem;
+}
+
+.primary-link:hover{
+  color:var(--light-primary);
+}
+
+.primary-link:active{
+  color:var(--primary);
 }
 
 @media (max-width:985px){

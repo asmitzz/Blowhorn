@@ -14,11 +14,11 @@ const Navbar = () => {
     return (
         <nav className="navbar">
            <h1 className="navbar-heading">nullBrains<span>.</span></h1>
-           { !toggle && <button className="hamburger" onClick={() => setToggle(true)}>
+           <button className={`hamburger ${toggle ? "hamburger-active" : ""}`} onClick={() => setToggle(!toggle)}>
                    <span></span>
                    <span></span>
                    <span></span>
-           </button>}
+           </button>
 
            <ul className="nav-items">
               
@@ -40,7 +40,7 @@ const Navbar = () => {
            </ul>
            <ul className="nav-items">
                <li className="nav-item">
-                   <NavLink className="nav-link" to="/signin">Sign In</NavLink>
+                   <NavLink className="primary-link" to="/signin">Sign In</NavLink>
                </li>
                <li className="nav-item">
                    <NavLink className="nav-link primary-btn" to="/signup">Sign Up</NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           {toggle && 
           <ul className="list" onClick={handleOptions}>
-              <button className="dismiss-btn" onClick={() => setToggle(false)}>X</button>
+              {/* <button className="dismiss-btn" onClick={() => setToggle(false)}>X</button> */}
               <li className="nav-item">
                   <NavLink end activeClassName="active" className="nav-link" to="/">Home</NavLink>
               </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
               </li>
               <div className="list-2">
               <li className="nav-item">
-                  <NavLink className="nav-link" to="/signin">Sign In</NavLink>
+                  <NavLink className="primary-link" style={{marginRight:"0.8rem"}} to="/signin">Sign In</NavLink>
               </li>
               <li className="nav-item">
                   <NavLink className="nav-link primary-btn" to="/signup">Sign Up</NavLink>

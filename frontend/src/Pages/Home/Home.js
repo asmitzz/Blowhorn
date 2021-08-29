@@ -3,9 +3,9 @@ import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
 import Blog from "./components/Blog/Blog";
 import Features from "./components/Features/Features";
-import Section1 from "./components/Section1/Section1";
-import Section2 from "./components/Section2/Section2";
-import Section3 from "./components/Section3/Section3";
+import ContentHeader from "./components/content-header/ContentHeader";
+import Companies from "./components/companies/Companies";
+import Goals from "./components/goals/Goals";
 import Team from "./components/Team/Team";
 
 const Home = () => {
@@ -13,9 +13,9 @@ const Home = () => {
         <React.Fragment>
           <div className="App">
             <Navbar/>
-            <Section1/>
-            <Section2/>
-            <Section3/>
+            <ContentHeader/>
+            <Companies/>
+            <Goals/>
             <Features/>
             <Team/>
           </div>
